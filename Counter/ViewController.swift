@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         counter.text = "Значение счетчика: \(number)"
-        countButton.titleLabel?.text = "Считай!"
+        countButton.titleLabel?.text = "Считаю!"
     }
     @IBAction func actionButton(_ sender: Any) {
         counter.text = "Значение счетчика: \(number + 1)"
