@@ -9,20 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var counter: UILabel!
+    @IBOutlet private weak var counter: UILabel!
     
-    @IBOutlet weak var countButton: UIButton!
+    @IBOutlet private weak var countButton: UIButton!
     
     var number: Int = 0
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
         counter.text = "Значение счетчика: \(number)"
-        countButton.titleLabel?.text = "Считай!"
+        countButton.titleLabel?.text = "Считаю!"
     }
-    @IBAction func actionButton(_ sender: Any) {
+    @IBAction private func actionButton(_ sender: Any) {
         counter.text = "Значение счетчика: \(number + 1)"
         return number += 1
     }
